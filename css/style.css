@@ -1151,6 +1151,20 @@
 
 
 /*** Footer Start ***/
+
+
+.footer .ft-logo {
+    max-height: 50px;
+    transition: .5s;
+    
+}
+
+
+/* .navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+ */
+
 .footer {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/carousel-2.jpg);
     background-position: center center;
