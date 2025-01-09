@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+  <body>
+    <h1>CounterUp Javascript Plugin</h1>
+   
+          <h1 class="counter" data-speed="100">125
+          </h1>
+          
+       
+            <h1 class="counter" data-speed="100">425
+          </h1>
+            
+            <h1 class="counter" data-speed="100">95
+          </h1>
+            
+            <h1 class="counter" data-speed="100">800
+          </h1>
+           <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include CounterUp Plugin -->
+    <script src="https://cdn.rawgit.com/bfintal/Counter-Up/master/dist/jquery.counterup.min.js"></script>
+
+    <script>
+      //counterUp
+      let counter = document.querySelectorAll(".counter");
+      let arr = Array.from(counter);
+
+      arr.map((item) => {
+        let count = item.innerHTML;
+        item.innerHTML = "";
+        let countNumber = 0;
+        function counterUp() {
+          item.innerHTML = countNumber++;
+          if (countNumber > count) {
+            clearInterval(stop);
+          }
+        }
+        let stop = setInterval(() => {
+          counterUp();
+        }, item.dataset.speed / count);
+      });
+    </script>
+  </body>
+</html>
