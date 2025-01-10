@@ -12,21 +12,20 @@ body {
 }
 /* Read more button */
 
-
 .service-item .btn {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    background: #FFFFFF;
-    border-radius: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: .5s;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .service-item:hover .btn {
-    width: 140px;
+  width: 140px;
 }
 
 /* Read more button end */
@@ -357,6 +356,8 @@ body {
   position: relative;
 }
 
+
+
 .header-carousel .owl-nav .owl-prev {
   position: absolute;
   width: 70px;
@@ -400,6 +401,7 @@ body {
 .header-carousel .owl-nav .owl-next:hover {
   box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
   color: var(--bs-primary) !important;
+  
 }
 
 @media (max-width: 576px) {
@@ -1185,6 +1187,9 @@ body {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(../img/carousel-2.jpg);
+    /* background-color: #232323; */
+    /* background-color: #1b2c51; */
+
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1192,16 +1197,14 @@ body {
 .footer .footer-item a {
   line-height: 35px;
   color: var(--bs-body);
-  transition: 0.5s;
 }
-
+    
 .footer .footer-item p {
   line-height: 35px;
 }
 
 .footer .footer-item a:hover {
   color: white;
-  font-weight: 600;
 }
 
 /*** Footer End ***/
